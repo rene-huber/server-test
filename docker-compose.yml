@@ -14,10 +14,10 @@ services:
     depends_on:
       - mongo
     environment:
-      MONGODB_URI: mongodb://mongo:27017/payload
+      MONGODB_URI: mongodb+srv://root:Berlin321@app-test.m7m9d.mongodb.net/server_cms_2?retryWrites=true&w=majority
       PORT: 3000
-      NODE_ENV: development
-      PAYLOAD_SECRET: TESTING
+      NODE_ENV: production
+      PAYLOAD_SECRET: c6a7506d09ec100360d69d0e
 
   mongo:
     image: mongo:latest
